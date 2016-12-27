@@ -19,16 +19,16 @@ router.get('/', function(req, res, next){
 	
 	post.save(function(err, post){
 		if(err){return next(err) }
-		pubsub.publish('new_post', post);
-		//websockets.broadcast('new_post', post);
+		//pubsub.publish('new_post', post);
+		websockets.broadcast('new_post', post);
 		res.json(201, post);
 	});    
 
   });
   
-  pubsub.subscribe('new_post', function (post) {
-    websockets.broadcast('new_post', post)
-  });
+  //pubsub.subscribe('new_post', function (post) {
+  //  websockets.broadcast('new_post', post)
+  //});
   
   module.exports = router;
 
