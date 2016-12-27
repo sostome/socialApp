@@ -3,7 +3,7 @@
   "scripts": {
     "start": "node boot.js",
     "test": "jshint . && mocha && karma start --single-run && protractor ",
-    "postinstall": "gulp build"
+    "postinstall": "bower install && gulp build"
   },
   "dependencies": {
     "bcrypt": "^1.0.1",
