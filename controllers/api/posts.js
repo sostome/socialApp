@@ -25,10 +25,10 @@ router.get('/', function(req, res, next){
 	});    
 
   });
-  
-  //pubsub.subscribe('new_post', function (post) {
-  //  websockets.broadcast('new_post', post)
-  //});
-  
+  /*
+  pubsub.subscribe('new_post', function (post) {
+    websockets.broadcast('new_post', post)
+  });
+  */
   module.exports = router;
 
