@@ -9,7 +9,7 @@ gulp.task('js', function () {
     .pipe(sourcemaps.init())
       .pipe(ngAnnotate())
       .pipe(concat('app.js'))
-      //.pipe(uglify())
+      .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('assets'))
 })
