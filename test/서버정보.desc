@@ -1,0 +1,37 @@
+부장님, 서버 IP가 잘못 공유되어, 수정하여 다시 공유 드립니다.
+수정된 서버는 SKT-GMPCPBIZ1,2,3 서버 입니다.
+ 
+서비스명 IP Hostname 
+cork 개발 WAS 211.188.181.90 SKT-GMPCDAP1 
+cork 개발 WAS 211.188.181.91 SKT-GMPCDAP2 
+cork 개발 WAS 211.188.181.92 SKT-GMPCDAP3 
+
+cork DB 150.204.15.97 SKT-GMPCPDB1 
+cork DB 150.204.15.98 SKT-GMPCPDB2 
+cork DB 150.204.15.99 SKT-GMPCPDB3 
+
+cork WAS 61.250.22.69 SKT-GMPCPAP1 
+cork WAS 61.250.22.60 SKT-GMPCPAP2 
+cork WAS 61.250.22.61 SKT-GMPCPAP3 
+
+cork WEB 203.236.17.7 SKT-GMPCPBIZ1 
+cork WEB 203.236.17.9 SKT-GMPCPBIZ2 
+cork WEB 203.236.17.10 SKT-GMPCPBIZ3 
+
+cork 개발 DB 150.206.12.203 SKT-GMPCDDB1 
+
+
+분류	소분류	서비스명	(L4) VIP Address	public/private	Hostname	계정/비번
+개발	WAS	cork 개발 WAS	Public IP	211.188.181.90 / 192.168.70.158	SKT-GMPCDAP1	appadmin / (!gmpadm!)
+		cork 개발 WAS	211.188.181.89	211.188.181.91  / 192.168.70.159	SKT-GMPCDAP2	appadmin / (!gmpadm!)
+		cork 개발 WAS	devcork.toktok.sk.com	211.188.181.92  / 192.168.70.160	SKT-GMPCDAP3	appadmin / (!gmpadm!)
+	DB	cork 개발 DB		150.206.12.203  	SKT-GMPCDDB1	mosaic / !mobileoffice10
+운영	DB	cork DB		150.204.15.97  	SKT-GMPCPDB1	mosaic / !mobileoffice10
+		cork DB		150.204.15.98	SKT-GMPCPDB2	mosaic / !mobileoffice10
+		cork DB		150.204.15.99	SKT-GMPCPDB3	mosaic / !mobileoffice10
+	WAS	cork WAS	Public IP: 61.250.22.115	61.250.22.69  / 192.168.30.110	SKT-GMPCPAP1	appadmin / (!gmpadm!)
+		cork WAS	corkx.toktok.sk.com 	61.250.22.60  / 192.168.30.70	SKT-GMPCPAP2	appadmin / (!gmpadm!)
+		cork WAS		61.250.22.61  / 192.168.30.89	SKT-GMPCPAP3	appadmin / (!gmpadm!)
+	WEB	cork WEB	Public IP: 203.236.17.6	203.236.17.7  / 192.168.30.88	SKT-GMPCPBIZ1	appadmin / (!gmpadm!)
+		cork WEB	Nat Ip: 10.180.17.6	203.236.17.9  / 192.168.30.108	SKT-GMPCPBIZ2	appadmin / (!gmpadm!)
+		cork WEB	cork.toktok.sk.com / mcork.toktok.sk.com	203.236.17.10  / 192.168.30.109	SKT-GMPCPBIZ3	appadmin / (!gmpadm!)
